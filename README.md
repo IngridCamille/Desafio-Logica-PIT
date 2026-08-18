@@ -20,7 +20,7 @@ elif 13 <= idade <= 17:
     print(f"Você é adolescente, sua idade é {idade}")
 elif 18 <= idade <= 64:
     print(f"Você é adulto, sua idade é {idade}")
-else:
+else: 
     print(f"Você é idoso, sua idade é {idade}")
 ```
 
@@ -47,6 +47,7 @@ elif operacao == "/":
         print("Erro: Não é possível dividir por zero!")
 else:
     print("Operação inválida!")
+
 ```
 
 ### 4. Classificador de Triângulos
@@ -56,12 +57,14 @@ b = float(input("Digite o comprimento do lado B: "))
 c = float(input("Digite o comprimento do lado C: "))
 
 if (a + b > c) and (a + c > b) and (b + c > a):
+    
     if a == b == c:
         print("Os lados formam um triângulo EQUILÁTERO.")
     elif a == b or a == c or b == c:
         print("Os lados formam um triângulo ISÓSCELES.")
     else:
         print("Os lados formam um triângulo ESCALENO.")
+        
 else:
     print("Os lados digitados NÃO formam um triângulo válido.")
 ```
@@ -80,43 +83,60 @@ elif delta == 0:
     print(f"Delta = {delta}. A equação possui uma raiz real (duas raízes iguais).")
 else:
     print(f"Delta = {delta}. A equação não possui raízes reais (duas raízes complexas).")
+
 ```
 
 ### 6. Estado Físico da Água
 ```python
-temp = float(input("Digite a temperatura da água (°C): "))
+temperatura = float(input("Digite a temperatura da água em °C: "))
 
-if temp <= 0:
-    print("Estado físico: Sólido")
-elif temp < 100:
-    print("Estado físico: Líquido")
+if temperatura <= 0:
+    print("Estado físico: SÓLIDO")
+elif temperatura < 100:
+    print("Estado físico: LÍQUIDO")
 else:
-    print("Estado físico: Gasoso")
+    print("Estado físico: GASOSO")
 ```
 
 ### 7. Comissão do Corretor
 ```python
-nome_corretor = input("Digite o nome do corretor: ")
+nome = input("Digite o nome do corretor: ")
 venda = float(input("Digite o valor total da venda (R$): "))
 
 if venda <= 500000:
-    taxa = 0.06
+    taxa = 0.06      
 elif venda <= 700000:
-    taxa = 0.085
+    taxa = 0.085     
 elif venda <= 1000000:
-    taxa = 0.10
+    taxa = 0.10      
 else:
-    taxa = 0.12
+    taxa = 0.12     
 
-print(f"Corretor: {nome_corretor} | Comissão: R$ {venda * taxa:,.2f}")
+comissao = venda * taxa
+
+print("RELATÓRIO DO CORRETOR:")
+print(f"Corretor: {nome}")
+print(f"Valor da Venda: R$ {venda:,.2f}")
+print(f"Valor da Comissão: R$ {comissao:,.2f}")
 ```
 
 ### 8. Fechamento de Conta de Hotel
 ```python
-nome_hospede = input("Digite o nome do hóspede: ")
+nome = input("Digite o nome do hóspede: ")
 dias = int(input("Digite a quantidade de diárias: "))
 
-taxa = 6.50 if dias > 7 else (12.00 if dias == 7 else 16.50)
+if dias > 7:
+    taxa_servico = 6.50
+elif dias == 7:
+    taxa_servico = 12.00
+else:  
+    taxa_servico = 16.50
 
-print(f"Hóspede: {nome_hospede} | Total: R$ {dias * (290.00 + taxa):,.2f}")
+total = dias * (290.00 + taxa_servico)
+
+print("AQUI O RESUMO DA HOSPEDAGEM:")
+print(f"Hóspede: {nome}")
+print(f"Total de diárias: {dias}")
+print(f"Total da conta: R$ {total:,.2f}")
+
 ```
