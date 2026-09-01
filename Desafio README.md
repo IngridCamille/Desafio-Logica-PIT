@@ -3,7 +3,7 @@
 ---
 
 ## Questão 1
-Utilizando uma estrutura de repetição, escreva um programa em Python que calcule o fatorial de um número informado pelo usuário.
+Utilizando uma estrutura de repetição, escreva um programa em Python que calcule o fatorial de um número informado pelo usuário.  
 
 ```python
 num = int(input("Insira um número: "))
@@ -18,7 +18,7 @@ print(f"O fatorial de {num} é {fatorial}")
 ---
 
 ## Questão 2
-Supondo que a população de um país A seja da ordem de 90.000 habitantes com uma taxa anual de crescimento de 5% e que a população de B seja 200.000 habitantes com uma taxa de crescimento de 1.5%.
+Supondo que a população de um país A seja da ordem de 90.000 habitantes com uma taxa anual de crescimento de 5% e que a população de B seja 200.000 habitantes com uma taxa de crescimento de 1.5%. Faça um programa que calcule e escreva o número de anos necessários para que a população do país A ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento. 
 
 ```python
 pais_a = 90000
@@ -35,7 +35,7 @@ print(f"Serão necessários {anos} anos.")
 ---
 
 ## Questão 3
-Resumo Estatístico de Notas
+Resumo estatístico de notas de um curso. Leia as notas de uma turma até que o usuário digite algo para sair. Para cada nota válida, determine se o estudante foi aprovado, ficou em recuperação ou foi reprovado. Considere aprovado para nota maior ou igual a 7,0, recuperação para nota entre 5,0 e 6,9, e reprovação para nota inferior a 5,0. Ao final, apresente a média da turma, a maior nota, a menor nota, o percentual de aprovação e a situação geral da turma. Classifique a turma como “desempenho satisfatório” quando o percentual de aprovação for igual ou superior a 70%. Requisitos: utilizar while; aceitar notas entre 0 e 10; não encerrar a leitura ao receber um valor inválido; impedir divisão por zero; utilizar decisões para a situação individual e para a classificação geral. 
 
 ```python
 soma_notas = 0
@@ -68,7 +68,7 @@ if total_alunos > 0:
 
 ## Questão 4 - Seleção de Atributos e Combinatória
 
-Escreva um programa que leia o total de atributos disponíveis (n) e quantos serão selecionados (r), calculando o número de subconjuntos possíveis e verificando a viabilidade de uma busca exaustiva.
+Seleção de atributos para um modelo. Um conjunto de dados possui n atributos disponíveis. O analista deseja selecionar r atributos para uma etapa de modelagem, sem considerar a ordem de seleção. Calcule o número de subconjuntos possíveis usando: C(n, r) = n! / (r! * (n-r)!) O programa deve validar 0 <= r <= n e informar se a quantidade de subconjuntos é compatível com uma busca exaustiva. Considere viável a busca quando houver até 10.000 combinações. Requisitos: calcular o resultado sem função pronta de fatorial; utilizar repetição; aplicar decisões para validar os parâmetros e classificar a viabilidade; explicar por que a ordem dos atributos não altera uma combinação. 
 
 ```python
 n = int(input("Digite o total de atributos (n): "))
@@ -104,7 +104,7 @@ else:
 
 ## Questão 5 - Simulação de Crescimento Populacional
 
-Escreva um programa que simule o crescimento de uma população de 2.727 indivíduos ao longo de 5 anos, considerando uma taxa constante de 4% ao ano.
+Uma população inicial de 2727 indivíduos cresce a uma taxa de 4% ao ano. Escreva um programa em Python que simule o crescimento dessa população e mostre o tamanho da população ao final de cada ano, durante 5 anos
 
 ```python
 populacao = 2727
@@ -121,7 +121,7 @@ for ano in range(1, 6):
 
 ## Questão 6 - Probabilidade Experimental de Dados
 
-Escreva um programa que simule ou receba o resultado de 20 lançamentos de um dado de 6 faces, determinando a contagem de números pares obtidos e calculando a probabilidade experimental.
+Probabilidade experimental. Um experimento consiste em lançar um dado 20 vezes. O programa recebe o resultado de cada lançamento e deve contar quantas vezes apareceu um número par. Ao final, deve calcular a probabilidade experimental de obter um número par. 
 
 ```python
 total_lancamentos = 20
