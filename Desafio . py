@@ -1,11 +1,9 @@
- # Desafio Prático 2
-
----
+#Desafio Prático 2
 
 # Questão 1
 
 num = int(input("Insira um número: "))
-fatorial = 1 
+fatorial = 1
 
 for i in range(num, 1, -1):
     fatorial *= i
